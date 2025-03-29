@@ -7,7 +7,7 @@ import pencil from "../../../assets/svg/pencil.svg";
 export const EditButton = () => {
   return (
     <StyledButton onClick={() => console.log('click')} >
-      <StyledImg src={pencil}  alt="Edit"/>
+      <img src={pencil}  alt="Edit"/>
     </StyledButton>
   )
 }
@@ -26,9 +26,4 @@ const StyledButton = styled.button`
     border-radius: 50%;
   }
 `;
-
-const StyledImg = styled.img`
-  width:15px;
-  height:15px;
-`
 
