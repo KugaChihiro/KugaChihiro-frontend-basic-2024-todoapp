@@ -23,6 +23,7 @@ const StyledText = styled.div`
    border: none;
    ${TEXT.M}
   }
+
 `;
 
 export const Title = () => {
