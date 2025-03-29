@@ -9,8 +9,8 @@ import TEXT from "../../../variables/texts";
 const StyledText = styled.div`
 
   border: 1px solid ${COLOR.BLACK};
-  width: fit-content;
   gap:10px;
+  width: fit-content;
   color: ${COLOR.WHITE};
   font-family:${FONTFAMILY.ROBOTO};
   font-weight:500;
