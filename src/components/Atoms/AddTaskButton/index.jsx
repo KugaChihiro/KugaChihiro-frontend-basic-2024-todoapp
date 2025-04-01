@@ -8,7 +8,7 @@ import TEXT from "../../../variables/texts";
 export const AddTaskButton = () => {
   return (
     <StyledButton>
-      <img src = {Plus}/>
+      <StyledImg src = {Plus}/>
       <StyledText>タスクを追加</StyledText>
     </StyledButton>
   )
@@ -35,4 +35,10 @@ const StyledButton = styled.button`
 const StyledText = styled.p`
   margin:0;
   padding:0;
+`
+const StyledImg = styled.img`
+  margin:0;
+  padding:0;
+  width:20px;
+  height:20px;
 `
