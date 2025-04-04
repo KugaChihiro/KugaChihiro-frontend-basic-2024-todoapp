@@ -27,8 +27,7 @@ export default function Input ({ onEditComplete, defaultValue }) {
 
   return (
     <StyledWrapper>
-      <StyledText defaultValue={defaultValue} ref={inputRef} onBlur={handleBlur} onKeyDown={handleKeyDown}>
-      </StyledText>
+      <StyledText defaultValue={defaultValue} ref={inputRef} onBlur={handleBlur} onKeyDown={handleKeyDown}/>
     </StyledWrapper>
   )
 
