@@ -4,9 +4,9 @@ import COLOR from "../../../variables/color";
 import pencil from "../../../assets/svg/pencil.svg";
 
 
-export const EditButton = () => {
+export const EditButton = ({onClick}) => {
   return (
-    <StyledButton onClick={() => console.log('click')} >
+    <StyledButton onClick={onClick} >
       <img src={pencil}  alt="Edit"/>
     </StyledButton>
   )
