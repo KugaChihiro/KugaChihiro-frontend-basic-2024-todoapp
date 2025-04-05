@@ -3,9 +3,9 @@ import styled from "styled-components";
 import COLOR from "../../../variables/color";
 import Check from "../../../assets/svg/check.svg";
 
-export const Checkbox = () => {
+export const Checkbox = ({onClick}) => {
   return (
-    <StyledButton>
+    <StyledButton onClick={onClick}>
       <StyledImg src = {Check}/>
     </StyledButton>
   )
