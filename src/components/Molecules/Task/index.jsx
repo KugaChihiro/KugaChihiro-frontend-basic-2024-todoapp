@@ -27,8 +27,8 @@ export default function Task({onTaskNameChange,onTaskComplete,taskName = "",defa
         <Checkbox onClick={onTaskComplete}/>
       </StyledCheckboxWrapper>
       <StyledNameAndButtonWrapper>
-        {isEditing ? (<Input onEditComplete={onEditComplete} defaultValue={taskName} />) : (<StyledTaskName>{taskName}</StyledTaskName>)}
-        <StyledEditButtonWrapper>{isEditing ? ("") : (<EditButton onClick={onEditButtonClick}/>)}</StyledEditButtonWrapper>
+       {isEditing ? ( <Input onEditComplete={onEditComplete} defaultValue={taskName} />) :
+       (<><StyledTaskName>{taskName}</StyledTaskName><StyledEditButtonWrapper><EditButton onClick={onEditButtonClick} /></StyledEditButtonWrapper></>)}
       </StyledNameAndButtonWrapper>
     </StyledWrapper>
   );
