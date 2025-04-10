@@ -7,7 +7,7 @@ import COLOR from "../../../variables/color";
 import TEXT from "../../../variables/texts";
 import FONTFAMILY from "../../../variables/font_family";
 
-export default function Task({onTaskNameChange= () => {}, onTaskComplete= () => {}, taskName = "", defaultIsEditing=false,}) {
+export default function Task({onTaskNameChange, onTaskComplete, taskName = "", defaultIsEditing=false,}) {
 
   const [isEditing, setIsEditing] = useState(defaultIsEditing);
 

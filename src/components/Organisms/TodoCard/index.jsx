@@ -6,28 +6,27 @@ import {AddTaskButton} from "../../Atoms/AddTaskButton";
 
 export default function TodoCard() {
 
-  const [taskList, setTaskList] = useState([
-    { name: "", initializing: true },
-  ]);
+  const [taskList, setTaskList] = useState([]);
 
   const onAddTaskButtonClick = () => {
     setTaskList([...taskList, { name: '', initializing: true }]);
   }
 
   const onTaskComplete = (index) => {
-    setTaskList(taskList.filter((_, taskindex) => taskindex !== index));
+    setTaskList(taskList.filter((_, taskIndex) => taskIndex !== index));
   }
 
   const onTaskNameChange = (value,index) => {
     if (value=== '') {
-      setTaskList(taskList.filter((_, taskindex) => taskindex !== index));
+      setTaskList(taskList.filter((_, taskIndex) => taskIndex !== index));
     }
+
     else {
-      setTaskList(taskList.map((taskcontent,taskindex) => {
-        if (taskindex ===  index) {
-          return { ...taskcontent, name: value, initializing: false };
+      setTaskList(taskList.map((taskContent,taskIndex) => {
+        if (taskIndex ===  index) {
+          return { ...taskContent, name: value, initializing: false };
         }
-        return taskcontent;
+        return taskContent;
       }))
     }
   }
@@ -35,7 +34,7 @@ export default function TodoCard() {
 
   return (
     <StyledWrapper>
-      <AddTaskButton onAddTaskButtonClick = {onAddTaskButtonClick}/>
+      <AddTaskButton onClick = {onAddTaskButtonClick}/>
       <StyledTaskList>
         {taskList.map((task, index) => (
           <Task
@@ -65,6 +64,5 @@ const StyledTaskList = styled.div`
   display:flex;
   flex-direction:column;
   gap:10px;
-  margin:10px 0px 0px 0px;
-  padding:0;
+  margin-top: 10px;
 `
