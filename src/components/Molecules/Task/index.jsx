@@ -50,6 +50,7 @@ const StyledNameAndButtonWrapper = styled.div`
   width: 100%;
   justify-content:space-between;
   display:flex;
+  height: 20px;
 `
 
 const StyledTaskName = styled.div`
