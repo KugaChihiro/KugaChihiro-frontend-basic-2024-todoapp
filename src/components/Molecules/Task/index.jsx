@@ -7,7 +7,7 @@ import COLOR from "../../../variables/color";
 import TEXT from "../../../variables/texts";
 import FONTFAMILY from "../../../variables/font_family";
 
-export default function Task({onTaskNameChange,onTaskComplete,taskName = "",defaultIsEditing=false,}) {
+export default function Task({onTaskNameChange, onTaskComplete, taskName = "", defaultIsEditing=false,}) {
 
   const [isEditing, setIsEditing] = useState(defaultIsEditing);
 
@@ -50,6 +50,7 @@ const StyledNameAndButtonWrapper = styled.div`
   width: 100%;
   justify-content:space-between;
   display:flex;
+  height: 20px;
 `
 
 const StyledTaskName = styled.div`
