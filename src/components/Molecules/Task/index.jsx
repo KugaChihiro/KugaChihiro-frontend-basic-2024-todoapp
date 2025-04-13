@@ -7,7 +7,7 @@ import COLOR from "../../../variables/color";
 import TEXT from "../../../variables/texts";
 import FONTFAMILY from "../../../variables/font_family";
 
-export default function Task({onTaskNameChange,onTaskComplete,taskName = "",defaultIsEditing=false,}) {
+export default function Task({onTaskNameChange, onTaskComplete, taskName = "", defaultIsEditing=false,}) {
 
   const [isEditing, setIsEditing] = useState(defaultIsEditing);
 
@@ -37,8 +37,8 @@ export default function Task({onTaskNameChange,onTaskComplete,taskName = "",defa
 
 const StyledWrapper = styled.div`
   display:flex;
-  align-items:center;
   width:100%;
+  height: auto;
   margin:2px 6px;
 `
 const StyledCheckboxWrapper = styled.div`
@@ -50,12 +50,17 @@ const StyledNameAndButtonWrapper = styled.div`
   width: 100%;
   justify-content:space-between;
   display:flex;
+  height: 100%;
+  gap:10px;
+  overflow-wrap:anywhere;
 `
 
 const StyledTaskName = styled.div`
   color: ${COLOR.LIGHT_GRAY_TRANSLUCENT_2};
   ${TEXT.S}
   font-family:${FONTFAMILY.NOTO_SANS};
+  width:auto;
+  height:auto;
 `
 
 const StyledEditButtonWrapper = styled.div`
