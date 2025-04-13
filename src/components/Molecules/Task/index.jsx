@@ -37,7 +37,6 @@ export default function Task({onTaskNameChange, onTaskComplete, taskName = "", d
 
 const StyledWrapper = styled.div`
   display:flex;
-  align-items:center;
   width:100%;
   height: auto;
   margin:2px 6px;
@@ -51,7 +50,9 @@ const StyledNameAndButtonWrapper = styled.div`
   width: 100%;
   justify-content:space-between;
   display:flex;
-  height: 20px;
+  height: 100%;
+  gap:10px;
+  overflow-wrap:anywhere;
 `
 
 const StyledTaskName = styled.div`
@@ -60,7 +61,6 @@ const StyledTaskName = styled.div`
   font-family:${FONTFAMILY.NOTO_SANS};
   width:auto;
   height:auto;
-  overflow-wrap: normal;
 `
 
 const StyledEditButtonWrapper = styled.div`
