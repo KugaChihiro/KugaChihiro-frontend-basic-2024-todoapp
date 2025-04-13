@@ -36,6 +36,7 @@ export default function Input ({ onEditComplete, defaultValue }) {
 const StyledWrapper = styled.div`
   background-color:${COLOR.BLACK};
   width:100%;
+  display: flex;
   padding:0px 4px;
   border-radius:2px;
   border:none;
@@ -43,8 +44,8 @@ const StyledWrapper = styled.div`
   align-items:center;
 `
 const StyledText= styled.input`
-  width:auto;
-  height:100%;
+  width:100%;
+  height:auto;
   background:transparent;
   caret-color: ${COLOR.LIGHT_GRAY_TRANSLUCENT_2};
   border:none;
