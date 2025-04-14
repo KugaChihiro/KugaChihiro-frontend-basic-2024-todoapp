@@ -51,7 +51,7 @@ export default function TodoCard() {
 }
 
 const StyledWrapper = styled.div`
-  width:auto;
+  width:100%;
   height:100%;
   background-color:${COLOR.LIGHT_BLACK};
   border-radius:4px;
