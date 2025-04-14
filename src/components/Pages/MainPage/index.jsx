@@ -13,6 +13,10 @@ const StyledWrapper = styled.div`
   display:flex;
   justify-content:center;
   margin-top:60px;
+
+  @media (max-width:${BREAKPOINT.MEDIUM}){
+    margin-top:20px;
+  }
 `
 
 const StyledTitleandCard = styled.div`
