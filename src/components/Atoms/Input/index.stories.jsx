@@ -1,15 +1,15 @@
-import Input from './index';
+import Input from "./index";
 
 export default {
-  title: 'Components/Atoms/Input',
+  title: "Components/Atoms/Input",
   component: Input,
 };
 
 export const Default = {
   args: {
-    defaultValue: '',
+    defaultValue: "",
     onEditComplete: () => {
-      console.log('Editing complete');
+      console.log("Editing complete");
     },
   },
 };

@@ -1,9 +1,8 @@
-import MainPage from './index';
+import MainPage from "./index";
 
 export default {
-  title: 'Components/Pages/MainPage',
+  title: "Components/Pages/MainPage",
   component: MainPage,
 };
 
-export const Default = {
-}
+export const Default = {};
