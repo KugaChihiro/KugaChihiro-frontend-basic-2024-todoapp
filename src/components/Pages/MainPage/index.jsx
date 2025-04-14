@@ -12,23 +12,23 @@ const StyledWrapper = styled.div`
   width:100%;
   display:flex;
   justify-content:center;
-  margin-top:60px;
+  padding-top:60px;
 
   @media (max-width:${BREAKPOINT.MEDIUM}){
-    margin-top:20px;
+    padding-top:20px;
   }
 `
 
 const StyledTitleandCard = styled.div`
   width:500px;
-  max-width: 100%;
+  max-width:100%;
   gap:20px;
   display:flex;
   flex-direction:column;
   align-items:center;
 
   @media (max-width:${BREAKPOINT.MEDIUM}){
-    margin-left:20px;
-    margin-right:20px;
+    padding-left:20px;
+    padding-right:20px;
   }
 `
