@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 import {Title} from "../../Atoms/Title";
 import TodoCard from "../../Organisms/TodoCard";
-import BREAKPOINT from '../../../variables/breakpoint';
+import BREAKPOINT from "../../../variables/breakpoint";
 
 export default function MainPage ()  {
-  return <StyledWrapper><StyledTitleandCard><Title/><TodoCard/></StyledTitleandCard></StyledWrapper>
+  return (<StyledWrapper><StyledTitleandCard><Title/><TodoCard/></StyledTitleandCard></StyledWrapper>)
 }
 
 const StyledWrapper = styled.div`
