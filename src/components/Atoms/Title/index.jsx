@@ -5,29 +5,22 @@ import COLOR from "../../../variables/color";
 import FONTFAMILY from "../../../variables/font_family";
 import TEXT from "../../../variables/texts";
 
-
 const StyledText = styled.div`
-
-  border: 1px solid ${COLOR.BLACK};
-  gap:10px;
+  gap: 10px;
   width: fit-content;
   color: ${COLOR.WHITE};
-  font-family:${FONTFAMILY.ROBOTO};
-  font-weight:500;
+  font-family: ${FONTFAMILY.ROBOTO};
+  font-weight: 500;
   ${TEXT.L}
   letter-spacing:0%;
-  text-align:center;
+  text-align: center;
 
-  @media(max-width: ${BREAKPOINT.MEDIUM}) {
-   font-family:${FONTFAMILY.NOTO_SANS};
-   border: none;
-   ${TEXT.M}
+  @media (max-width: ${BREAKPOINT.MEDIUM}) {
+    font-family: ${FONTFAMILY.NOTO_SANS};
+    ${TEXT.M}
   }
-
 `;
 
 export const Title = () => {
-  return  <StyledText>SIMPLE TODO APP</StyledText>;
-}
-
-
+  return <StyledText>SIMPLE TODO APP</StyledText>;
+};

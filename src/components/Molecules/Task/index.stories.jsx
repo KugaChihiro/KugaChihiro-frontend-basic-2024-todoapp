@@ -1,9 +1,8 @@
-import Task from './index';
+import Task from "./index";
 
 export default {
-  title: 'Components/Molecules/Task',
+  title: "Components/Molecules/Task",
   component: Task,
 };
 
-export const Default = {
-}
+export const Default = {};

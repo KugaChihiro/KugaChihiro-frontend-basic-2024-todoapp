@@ -1,9 +1,8 @@
-import TodoCard from './index';
+import TodoCard from "./index";
 
 export default {
-  title: 'Components/Organisms/TodoCard',
+  title: "Components/Organisms/TodoCard",
   component: TodoCard,
 };
 
-export const Default = {
-}
+export const Default = {};
