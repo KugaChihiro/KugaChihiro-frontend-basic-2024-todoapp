@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import MainPage from "./components/Pages/MainPage";
-import { useAlertHandlerContext} from "./contexts";
 import "./style.css";
-import { AlertHandlerProvider } from "./contexts";
+import { useAlertHandlerContext} from "./contexts/alert_handler";
+import { AlertHandlerProvider } from "./contexts/alert_handler";
 import {AlertManager} from "./components/Organisms/AlertManager";
 
 const AlertHandlerContext = useAlertHandlerContext();
