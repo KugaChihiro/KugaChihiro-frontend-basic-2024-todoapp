@@ -3,8 +3,10 @@ import styled from "styled-components";
 import Task from "../../Molecules/Task";
 import COLOR from "../../../variables/color";
 import { AddTaskButton } from "../../Atoms/AddTaskButton";
+import { useAlertHandlerContext } from "../../../contexts/alert_handler";
 
 export default function TodoCard() {
+  const { setAlert} = useAlertHandlerContext();
   const [taskList, setTaskList] = useState(JSON.parse(localStorage.getItem("task_data")) || []);
 
   const onAddTaskButtonClick = () => {
@@ -18,6 +20,7 @@ export default function TodoCard() {
   const onTaskNameChange = (value, index) => {
     if (value === "") {
       setTaskList(taskList.filter((_, taskIndex) => taskIndex !== index));
+      setAlert("タスクの名前が設定されていません。");
     } else {
       setTaskList(
         taskList.map((taskContent, taskIndex) => {
@@ -30,7 +33,9 @@ export default function TodoCard() {
     }
   };
 
+
  useEffect(()=>{localStorage.setItem("task_data", JSON.stringify(taskList));},[taskList]);
+
 
   return (
     <StyledWrapper>
