@@ -4,7 +4,7 @@ import MainPage from "./components/Pages/MainPage";
 import { useAlertHandlerContext} from "./contexts";
 import "./style.css";
 import { AlertHandlerProvider } from "./contexts";
-import {AlertManager} from "./AlertManager";
+import {AlertManager} from "./Organisms/AlertManager";
 
 const AlertHandlerContext = useAlertHandlerContext();
 AlertHandlerContext.setAlert
